@@ -1,0 +1,38 @@
+.get_started {
+  position: relative;
+  min-height: 415px;
+  background-color: $main-color;
+  text-align: center;
+  &__title {
+    padding-top: 114px;
+    text-align: center;
+  }
+  &__subtitle {
+    padding: 26px 0 18px 0;
+    text-align: center;
+  }
+  &__left {
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    left: 0;
+    height: 400px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__right {
+    position: absolute;
+    overflow: hidden;
+    top: 82px;
+    right: 0;
+    height: 333px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

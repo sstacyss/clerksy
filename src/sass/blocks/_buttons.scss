@@ -1,0 +1,112 @@
+.buttons {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 160px;
+  background: $button-color;
+  border: none;
+  color: $hover-color;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.5s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: $animation-color; // Общий цвет анимации
+    transition: width 0.5s ease;
+    border-radius: 160px;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &-red {
+    background-color: $red-button-background;
+    color: $main-color;
+    font-weight: 600;
+
+    &::before {
+      background-color: $red-button-hover; // Уникальный цвет анимации для красной кнопки
+    }
+  }
+
+  &_text {
+    position: relative;
+    z-index: 2; // Текст поверх анимированного фона
+  }
+
+  &_text-green {
+    color: $main-color;
+  }
+}
+
+// .buttons {
+//   position: relative;
+//   overflow: hidden;
+//   display: inline-block;
+//   padding: 15px 25px 15px 25px;
+//   border-radius: 160px;
+//   background: #198c36;
+//   border: none;
+//   color: #fbfaf7;
+//   font-family: Noto Sans;
+//   font-size: 16px;
+//   font-weight: 400;
+//   cursor: pointer;
+//   transition: color 0.5s ease;
+//   &_text {
+//     position: relative;
+//     z-index: 2; // текст поверх анимированного фона
+//   }
+//   &_text-green {
+//     color: $main-color;
+//   }
+//   &:hover {
+//     // background: transparent; // делаем фон прозрачным, чтобы показать анимированный фон
+//     color: #fbfaf7;
+//     text-decoration: none;
+//   }
+//   &-red {
+//     background-color: #fab5a0;
+//     color: $main-color;
+//     font-weight: 600;
+//     &::before {
+//       // Уникальная анимация для красной кнопки
+//       background-color: #f0997f; // Уникальный цвет анимации для красной кнопки
+//     }
+//     &:hover::before {
+//       // Уникальный эффект наведения для красной кнопки
+//       background-color: #f0997f; // Уникальный цвет анимации для красной кнопки
+//     }
+//   }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0%; // начальное состояние - скрыт
+//     height: 100%;
+//     background-color: #06491774; // цвет анимации
+//     transition: width 0.5s ease; // плавная транзиция
+//     border-radius: 160px; // если нужно, чтобы скругление соответствовало кнопке
+//     z-index: 1;
+//   }
+//   &:hover::before {
+//     width: 100%; // при наведении анимируем фон до полной ширины
+//   }
+// }

@@ -1,0 +1,20 @@
+.employees {
+  min-height: 775px;
+  background-color: #f2efe6;
+  &__title {
+    padding-top: 114px;
+    text-align: center;
+  }
+  &__subtext {
+    padding-top: 27px;
+    text-align: center;
+  }
+  &__img {
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

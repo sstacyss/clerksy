@@ -1,0 +1,42 @@
+@import "libs/bootstrap-reboot.min";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../fonts/Recoleta-SemiBold.eot");
+  src: local("../fonts/Recoleta SemiBold"), local("Recoleta-SemiBold"),
+    url("../fonts/Recoleta-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Recoleta-SemiBold.woff") format("woff"),
+    url("../fonts/Recoleta-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+@import "blocks/title";
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/production";
+@import "blocks/employees";
+@import "blocks/offer";
+@import "blocks/demo";
+@import "blocks/book";
+@import "blocks/get_started";
+@import "blocks/subscription";
+@import "blocks/footer";

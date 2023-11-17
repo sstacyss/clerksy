@@ -1,0 +1,22 @@
+.book {
+  min-height: 753px;
+  &__wrapper {
+    padding-top: 109px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__subtitle {
+    padding: 25px 0 19px 0;
+  }
+}
