@@ -1,6 +1,9 @@
 .employees {
-  min-height: 775px;
   background-color: #f2efe6;
+  &__text {
+    margin: 0 auto;
+    max-width: 785px;
+  }
   &__title {
     padding-top: 114px;
     text-align: center;
@@ -10,7 +13,9 @@
     text-align: center;
   }
   &__img {
+    padding-top: 30px;
     margin: 0 auto;
+    padding-bottom: 9%;
     img {
       width: 100%;
       height: auto;

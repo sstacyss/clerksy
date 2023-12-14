@@ -1,5 +1,4 @@
 .about {
-  min-height: 1466px;
   &__wrapper {
     padding-top: 120px;
     display: grid;
@@ -17,7 +16,7 @@
     }
   }
   &__text {
-    width: 393px;
+    max-width: 393px;
   }
   &__partners {
     padding: 115px 0 120px 0;

@@ -23,7 +23,7 @@
 }
 
 .container {
-  width: 1180px;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -40,3 +40,4 @@
 @import "blocks/get_started";
 @import "blocks/subscription";
 @import "blocks/footer";
+@import "blocks/media";

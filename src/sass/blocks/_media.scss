@@ -1,0 +1,641 @@
+@media (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+// Большие настольные экраны
+// @media (min-width: 1200px) and (max-width: 1599px) {
+// }
+
+// Ноутбуки и средние настольные экраны
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 14px;
+  }
+
+  .production {
+    min-height: 490px;
+  }
+
+  .employees {
+    min-height: 0;
+    &__text {
+      max-width: 685px;
+    }
+  }
+
+  .offer {
+    min-height: 1420px;
+    &__cards {
+      .card {
+        min-width: 240px;
+        max-height: 470px;
+        &:nth-child(2) {
+          max-height: 515px;
+        }
+      }
+    }
+  }
+
+  .demo {
+    min-height: 590px;
+  }
+
+  .subscription {
+    .buttons {
+      font-size: 16px;
+    }
+    &__email {
+      input {
+        height: 51px;
+      }
+    }
+  }
+
+  .footer {
+    &__title {
+      font-size: 22px;
+    }
+  }
+}
+
+// Планшеты
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 12px; // Меньший базовый размер шрифта для мобильных устройств
+  }
+
+  .header {
+    flex-direction: column;
+    &__logo {
+      max-width: 110px;
+    }
+    &__links {
+      padding-top: 15px;
+    }
+  }
+
+  .header .header__button.buttons {
+    background: transparent; // Убираем фоновый цвет
+    padding: 0; // Убираем padding
+    border-radius: 0; // Убираем скругление
+    position: static; // Устанавливаем стандартное позиционирование
+    overflow: visible; // Возвращаем стандартное отображение overflow
+
+    &::before {
+      display: none; // Убираем анимацию
+    }
+
+    .buttons_text {
+      color: inherit; // Цвет текста, как у обычной ссылки
+      position: static; // Стандартное позиционирование текста
+    }
+  }
+
+  .hero {
+    &__wrapper {
+      padding-top: 60px;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__text {
+      max-width: 290px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      padding-top: 90px;
+    }
+    &__text {
+      max-width: 325px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+  }
+
+  .production {
+    &__items {
+      flex-direction: column;
+      gap: 60px;
+      padding-bottom: 60px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .employees {
+    min-height: 0;
+    &__text {
+      max-width: 585px;
+    }
+    &__subtext {
+      font-size: 16px;
+    }
+    &__title {
+      padding-top: 85px;
+    }
+  }
+
+  .offer {
+    &__wrapper {
+      padding-top: 110px;
+    }
+    &__text {
+      max-width: 292px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__subtext {
+      font-size: 16px;
+    }
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 50px;
+      .card {
+        &__list {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .demo {
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__title {
+      padding-top: 80px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__estimation {
+      padding-top: 23px;
+    }
+    &__wrapper {
+      padding-top: 48px;
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 65px;
+    }
+    &__circle {
+      top: 445px;
+      max-width: 235px;
+    }
+    &__button {
+      margin-bottom: 50px;
+    }
+  }
+
+  .book {
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__wrapper {
+      padding-top: 75px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .get_started {
+    min-height: 315px;
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__title {
+      padding-top: 85px;
+    }
+    &__subtitle {
+      padding: 12px 0 22px 0;
+      font-size: 16px;
+    }
+    &__left {
+      top: 36px;
+      max-width: 200px;
+      max-height: 300px;
+    }
+    &__right {
+      top: 93px;
+      max-width: 200px;
+      max-height: 300px;
+    }
+  }
+
+  .subscription {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__subtitle {
+      padding-top: 20px;
+      font-size: 16px;
+    }
+    &__form {
+      padding-top: 35px;
+    }
+    &__email {
+      text-align: center;
+      input {
+        width: 100%; // Адаптивная ширина
+        max-width: 590px;
+        height: 48px;
+        font-size: 14px;
+      }
+    }
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__policy {
+      padding-top: 15px;
+      max-width: 600px;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &__title {
+      font-size: 22px;
+    }
+  }
+}
+
+// Мобильные устройства и маленькие планшеты (максимальный подход)
+@media (max-width: 767px) {
+  html {
+    font-size: 12px; // Меньший базовый размер шрифта для мобильных устройств
+  }
+
+  .container {
+    max-width: 100%; // Контейнер занимает весь экран на мобильных устройствах
+    padding: 0 10%;
+    transition: max-width 0.3s ease-in-out;
+  }
+
+  .header {
+    padding-top: 40px;
+    flex-direction: column;
+    &__logo {
+      max-width: 150px;
+    }
+    &__links {
+      padding-top: 35px;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .header .header__button.buttons {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    position: static;
+    overflow: visible;
+
+    &::before {
+      display: none;
+    }
+
+    .buttons_text {
+      color: inherit;
+      position: static;
+    }
+  }
+
+  .hero {
+    &__wrapper {
+      padding-top: 80px;
+      display: grid;
+      grid-template-columns: 1fr; // Одна колонка
+      align-items: center;
+    }
+    &__text {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      padding-top: 15px;
+      text-align: center;
+      font-size: 16px;
+    }
+    &__img {
+      padding-top: 15px;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      padding-top: 65px;
+      display: grid;
+      grid-template-columns: 1fr; // Одна колонка
+      gap: 45px;
+      // Первый блок текста
+      .about__text:nth-child(2) {
+        order: 1;
+      }
+
+      // Первая картинка
+      .about__img:first-of-type {
+        order: 2;
+      }
+
+      // Второй блок текста
+      .about__text:nth-child(3) {
+        order: 3;
+      }
+
+      // Вторая картинка
+      .about__img:last-of-type {
+        order: 4;
+      }
+    }
+    &__text {
+      max-width: 575px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      padding-top: 15px;
+      text-align: center;
+      font-size: 16px;
+    }
+    &__partners {
+      padding: 100px 0 80px 0;
+    }
+    &__logos {
+      flex-direction: column;
+      gap: 55px;
+    }
+  }
+
+  .production {
+    &__items {
+      flex-direction: column;
+      gap: 60px;
+      padding-bottom: 60px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .employees {
+    min-height: 0;
+    &__text {
+      max-width: 485px;
+    }
+    &__subtext {
+      font-size: 16px;
+    }
+    &__title {
+      padding-top: 65px;
+    }
+  }
+
+  .offer {
+    &__wrapper {
+      padding-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    &__text {
+      max-width: 492px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      padding-top: 15px;
+      text-align: center;
+      font-size: 16px;
+    }
+    &__headline {
+      padding-top: 80px;
+    }
+    &__cards {
+      padding-top: 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 50px;
+      .card {
+        &__title {
+          font-size: 22px;
+        }
+        &__list {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &__subtext {
+      font-size: 16px;
+    }
+  }
+
+  .demo {
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__title {
+      padding-top: 80px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__estimation {
+      padding-top: 23px;
+    }
+    &__wrapper {
+      padding-top: 48px;
+      flex-direction: column;
+      gap: 45px;
+      margin-bottom: 65px;
+    }
+    &__circle {
+      top: 430px;
+      max-width: 235px;
+    }
+    &__button {
+      margin-bottom: 50px;
+    }
+  }
+
+  .book {
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr; // Одна колонка
+      gap: 15px;
+      padding-top: 65px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      max-width: 488px;
+      text-align: center;
+    }
+    &__subtitle {
+      padding: 15px 0 25px 0;
+      font-size: 16px;
+    }
+    &__button {
+      text-align: center;
+    }
+  }
+
+  .get_started {
+    min-height: 395px;
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__text {
+      max-width: 275px;
+      margin: 0 auto;
+    }
+    &__title {
+      padding-top: 65px;
+    }
+    &__subtitle {
+      padding: 12px 0 22px 0;
+      font-size: 16px;
+    }
+    &__left {
+      top: 255px;
+      max-width: 100px;
+      max-height: 200px;
+    }
+    &__right {
+      top: 284px;
+      max-width: 100px;
+      max-height: 200px;
+    }
+  }
+
+  .subscription {
+    &__wrapper {
+      flex-direction: column;
+      padding-bottom: 55px;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      padding-top: 50px;
+    }
+    &__subtitle {
+      padding-top: 20px;
+      font-size: 16px;
+    }
+    &__form {
+      padding-top: 35px;
+    }
+    &__email {
+      text-align: center;
+      input {
+        width: 100%; // Адаптивная ширина
+        max-width: 590px;
+        height: 48px;
+        font-size: 14px;
+      }
+    }
+    .buttons {
+      font-size: 16px;
+      &::before {
+        display: none; // Убираем анимацию
+      }
+    }
+    &__policy {
+      padding-top: 15px;
+      max-width: 600px;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &__title {
+      font-size: 22px;
+    }
+    &__top {
+      padding-top: 35px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__divider {
+      margin-top: 125px;
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 25px;
+    }
+    &__trademark {
+      text-align: center;
+    }
+    &__list {
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+}
