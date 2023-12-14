@@ -1,35 +1,79 @@
+html {
+  font-size: 16px; // Базовый размер шрифта для масштабирования в rem
+}
+
 .title {
   color: $main-color;
   font-family: Recoleta;
-  font-size: 48px;
+  font-size: 3rem; // 48px / 16px
   font-weight: 600;
-  line-height: 54px;
+  line-height: 1.125; // 54px / 48px
+
   &-fz28 {
     color: $main-color;
     font-family: Recoleta;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-size: 1.75rem; // 28px / 16px
+    line-height: 1.125; // 31.5px / 28px
   }
+
   &-fz24 {
     color: $main-color;
     font-family: Recoleta;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem; // 24px / 16px
+    line-height: 1.5; // 36px / 24px
   }
+
   &-white {
     color: #fbfaf7;
-    line-height: 65.25px;
+    line-height: 1.359375; // 65.25px / 48px
   }
 
   &_subtitle {
     color: $main-color;
     font-family: Noto Sans;
-    font-size: 18px;
+    font-size: 1.125rem; // 18px / 16px
     font-style: normal;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 1.5; // 27px / 18px
   }
+
   &_subtitle-white {
     color: #fbfaf7;
   }
 }
+
+// .title {
+//   color: $main-color;
+//   font-family: Recoleta;
+//   font-size: 48px;
+//   font-weight: 600;
+//   line-height: 54px;
+//   &-fz28 {
+//     color: $main-color;
+//     font-family: Recoleta;
+//     font-size: 28px;
+//     line-height: 31.5px;
+//   }
+//   &-fz24 {
+//     color: $main-color;
+//     font-family: Recoleta;
+//     font-size: 24px;
+//     line-height: 36px;
+//   }
+//   &-white {
+//     color: #fbfaf7;
+//     line-height: 65.25px;
+//   }
+
+//   &_subtitle {
+//     color: $main-color;
+//     font-family: Noto Sans;
+//     font-size: 18px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 27px;
+//   }
+//   &_subtitle-white {
+//     color: #fbfaf7;
+//   }
+// }

@@ -1,14 +1,15 @@
 .subscription {
-  min-height: 240px;
   background-color: #f2efe6;
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 60px;
   }
   &__text {
-    min-width: 590px;
+    width: 100%;
+    max-width: 590px;
   }
   &__title {
     padding-top: 54px;
@@ -22,12 +23,13 @@
   &__email {
     position: relative;
     input {
-      width: 590px;
-      height: 54px;
+      width: 100%; // Адаптивная ширина
+      height: 54px; // Высоту можно оставить фиксированной или использовать em/rem
       border-radius: 255px;
       border: 1px solid #f2efe6;
       background: #fff;
-      padding: 0 121px 0 20px;
+      padding-left: 20px; // Уменьшенный padding с левой стороны
+      padding-right: 121px; // Увеличенный padding с правой стороны для кнопки
       color: $main-color;
     }
   }
